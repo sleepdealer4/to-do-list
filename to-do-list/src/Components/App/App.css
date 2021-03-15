@@ -1,0 +1,90 @@
+:root {
+  --bg-clr: rgb(102, 48, 138);
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.input-container button {
+  margin-left: 20px;
+  height: 30px;
+  width: 50px;
+  border-radius: 25px;
+  border: 1px transparent;
+  -webkit-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(136, 224, 151);
+}
+
+.input-container button:active {
+  background-color: rgb(87, 141, 96);
+}
+
+input[type="text"] {
+  width: 350px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  text-indent: 7px;
+  transition: 0.2s all ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: 2px solid rgb(185, 51, 17);
+  transition: 0.2s all ease-in-out;
+}
+
+.list-container {
+  margin-top: 100px;
+  width: 50%;
+  background-color: white;
+  min-height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  padding: 35px;
+  -webkit-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.task {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-bottom: 2px solid gray;
+  display: inline-flex;
+}
+
+.task button {
+  width: 100px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.complete {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
+}
