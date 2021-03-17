@@ -31,10 +31,11 @@ function App() {
   };
 
   const handleRemove = (id) => {
-    tasks.splice(id, 1);
+    console.log(id);
+    tasks.splice(tasks.length - id, 1);
   };
-
   console.log(tasks);
+
   return (
     <div className="App">
       <p className="title">To do</p>
@@ -50,7 +51,14 @@ function App() {
       <div className="list-container">
         <div className="task-list">
           {tasks.map(({ value, index }) => {
-            return <Task task={value} key={index} onRemove={handleRemove} />;
+            return (
+              <Task
+                task={value}
+                key={index}
+                id={index}
+                onRemove={handleRemove}
+              />
+            );
           })}
         </div>
       </div>
