@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <p className="title">To do</p>
+      <p className="title"> To do list</p>
       <div className="input-container">
         <input
           type="text"
